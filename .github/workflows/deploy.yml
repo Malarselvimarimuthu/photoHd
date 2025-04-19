@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-      JENKINS_URL: "http://192.168.43.236:8081"
+      JENKINS_URL: "http://192.168.58.1:8081"
       JENKINS_JOB_NAME: "html-static-deploy"
 
     steps:
