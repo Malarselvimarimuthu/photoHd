@@ -1,0 +1,24 @@
+name: Deploy Static Website
+
+on:
+  push:
+    branches:
+      - main  # or your default branch name
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    # We'll add deployment steps in the next phase
+    - name: Build and Test
+      run: |
+        echo "Building and testing the website..."
